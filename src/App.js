@@ -10,6 +10,7 @@ import Nftavailable from "./pages/nft-available/Nftavailable";
 import Availablesale from "./pages/available-sale/Availablesale";
 import NftMint from "./pages/nft-creation/NftMint";
 import NftCreation from "./pages/nft-creation/NftCreation";
+import About from "./pages/about/About";
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <Route  path='/ongoing-bidding' element={<OngoingB />} />
       <Route  path='/nft-available' element={<Nftavailable />} />
       <Route  path="/available-fractionalownership" element={<Availablesale />} />
+      <Route  path="/about-us" element={<About />} />
       
       
     </Routes>
