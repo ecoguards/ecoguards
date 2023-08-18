@@ -3,19 +3,14 @@ import {
     ProjectsParent,
     ProjectsWrapper,
     Header,
-    SummaryContainer1,
-    SummaryContainer2,
-    Button,
-    ButtonContainer
-} from "./projects.styles";
-import arrow from "../../assets/arrow.png";
-import tusk from "../../assets/tusk.png";
-import horn from "../../assets/horn.png";
-import speed from "../../assets/speed.png";
-import roar from "../../assets/roar.png";
-import bark from "../../assets/bark.png";
-import pride from "../../assets/pride.png";
-import { Link } from "react-router-dom";
+    SummaryContainer1
+   } from "./projects.styles";
+import nftbark from "../../assets/nftbark.png";
+import nftpride from "../../assets/nftpride.png";
+import nftspeed from "../../assets/nftspeed.png";
+import {Link} from 'react-router-dom';
+
+
 
 
 
@@ -28,25 +23,17 @@ const Projects = () => {
     return (
         <ProjectsParent>
             <ProjectsWrapper>
-                <Header><h2>Ongoing Conservation Projects</h2>
-                    <img src={arrow} alt="arrow" />
+                <Header><h2>NFTs available for sale</h2>
+                <Link style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link> 
                 </Header>
 
                 <SummaryContainer1>
-                    <Link to='/project-details'><img src={horn} alt="horn" /></Link>
-                    <img src={roar} alt="roar"/>
-                    <img src={tusk} alt="tusk" />
+                    <img src={nftpride} alt="nftpride" />
+                    <img src={nftbark} alt="nftbark"/>
+                    <img src={nftspeed} alt="nftspeed" />
                 </SummaryContainer1>
-                <SummaryContainer2>
-                    <img src={pride} alt="pride" />
-                    <img src={bark} alt="bark" />
-                    <img src={speed} alt="speed" />
-                </SummaryContainer2>
-                <ButtonContainer>
-                    <Button>
-                        <Link  style={{ textDecoration: 'none', color: 'white' }}>Explore more Projects</Link>
-                    </Button>
-                </ButtonContainer>
+                
+                
             </ProjectsWrapper>
 
 

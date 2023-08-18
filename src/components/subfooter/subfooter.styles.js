@@ -121,6 +121,7 @@ export const ResourcesDiv = styled.div`
     background: #1A1818;
     color: #ffffff;
     margin-top: 5rem;
+    margin-left:4rem;
 
     & h2{
        line-height:0.5rem;
@@ -139,7 +140,7 @@ export const ResourcesDiv = styled.div`
          font-weight: 200;
          font-size: 0.6rem;
          color:#fff;
-         margin-left: 8rem;
+         margin-top:0.5rem;
      }
  
     

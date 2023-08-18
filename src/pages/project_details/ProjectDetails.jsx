@@ -5,14 +5,12 @@ import morganImg from '../../assets/morgan.svg';
 import pateImg from '../../assets/Pate.svg';
 import carterImg from '../../assets/carter.svg';
 import andersonImg from '../../assets/anderson.svg';
-import incentiveImg from '../../assets/incentives.png';
 import updateImg from '../../assets/updates.svg';
-import padlockImg from '../../assets/padlocks.svg';
 import Navbar from '../../components/navbar/Navbar';
-import rhinotwo from "../../assets/rhinotwo.png";
 import hornImage from "../../assets/hornImage.svg";
 import Subfooter from '../../components/subfooter/Subfooter';
 import {Link} from 'react-router-dom';
+import mccoy from "../../assets/mccoy.svg";
 
 
 
@@ -33,35 +31,32 @@ const ProjectDetails = () => {
 
 
   useEffect(() => {
-    if (selectedTab === 'overview') {
-      setProjects([<ProjectOverview1  />]);
-    } else if (selectedTab === 'community') {
-      setProjects([<Community />]);
-    } else if (selectedTab === 'reward') {
-      setProjects([<RewardIncentives />]);
-    } else if (selectedTab === 'team') {
-      setProjects([<TeamMembers />]);
-    } else if (selectedTab === 'update') {
-      setProjects([<Updates />]);
-    } else if (selectedTab === 'security') {
-      setProjects([<Security />]);
+    if (selectedTab === 'allnfts') {
+      setProjects([<AllNfts  />]);
+    } else if (selectedTab === 'activities') {
+      setProjects([<Activities />]);
     } else if (selectedTab === 'contact') {
       setProjects([<ContactInfo />]);
-    }
+    } else if (selectedTab === 'qualifications') {
+      setProjects([<Qualifications />]);
+    } else if (selectedTab === 'update') {
+      setProjects([<Updates />]);
+    } 
+    
   }, [selectedTab]);
 
 
   return (
     <>
-      <main className='bg-[#1A1818]'>
+      <main className='bg-[#1A1818] '>
         <section className='w-[90%] md:w-[80%] mx-auto py-10'>
          <Navbar/>
          <div class="flex flex-col md:flex-col justify-center">
          <h1 className="title-font sm:text-2xl text-3xl mb-4 font-medium text-white">
-          Hornshield
+          McCoy
           </h1>
-          <div class="flex items-stretch md:items-center p-8">
-         <img src={rhinotwo} alt="rhinotwo" marginBottom="2rem"/>
+          <div class="flex items-stretch md:items-center p-10">
+         <img src={mccoy} alt='mccoy' marginBottom="2rem"/>
          </div>
          </div>
           <div className='py-2 mb-3 border md:text-start text-center w-full md:flex md:justify-between'>
@@ -75,7 +70,7 @@ const ProjectDetails = () => {
               selectedTab === 'overview' ? `py-3 px-5 font-bold text-white` : 'border-gray-200'
             } tracking-wider`}
           >
-            Project Overview
+            All NFTs
           </a>
           <a
             href="/"
@@ -87,20 +82,9 @@ const ProjectDetails = () => {
               selectedTab === 'team' ? `py-3 px-5 font-bold text-white` : 'border-gray-200'
             } tracking-wider`}
           >
-            Team Members
+            Activities
           </a>
-          <a
-            href="/"
-            onClick={(e) => {
-              e.preventDefault();
-              setSelectedTab('reward');
-            }}
-            className={`sm:px-4 py-3 sm:w-auto justify-center sm:justify-start title-font text-gray-200 inline-flex items-center leading-none ${
-              selectedTab === 'reward' ? `py-3 px-5 font-bold text-white` : 'border-gray-200'
-            } tracking-wider`}
-          >
-            Reward/Incentives
-          </a>          
+         
           <a
             href="/"
             onClick={(e) => {
@@ -123,7 +107,7 @@ const ProjectDetails = () => {
               selectedTab === 'community' ? `py-3 px-5 font-bold text-white` : 'border-gray-200'
             } tracking-wider`}
           >
-            Community
+            Qualifications
           </a>
           <a
             href="/"
@@ -137,18 +121,7 @@ const ProjectDetails = () => {
           >
             Updates
           </a>
-          <a
-            href="/"
-            onClick={(e) => {
-              e.preventDefault();
-              setSelectedTab('security');
-            }}
-            className={`sm:px-4 py-3 sm:w-auto justify-center sm:justify-start title-font text-gray-200 inline-flex items-center leading-none ${
-              selectedTab === 'security' ? `py-3 px-5 font-bold text-white` : 'border-gray-200'
-            } tracking-wider`}
-          >
-            Security
-          </a>
+          
           </div>
 
           {projects.map((project, index) => (
@@ -169,7 +142,7 @@ const ProjectDetails = () => {
 
 export default ProjectDetails
 
-export const ProjectOverview1= () => {
+export const AllNfts= () => {
   return (
     <>
       <section  className='md:flex md:justify-between md:py-2 h-full'>
@@ -291,7 +264,7 @@ export const ProjectOverview1= () => {
   )
 };
 
-export const Community = () => {
+export const Activities = () => {
   return (
     <>
       <section className='community py-10 md:h-[80vh]'>
@@ -376,44 +349,7 @@ export const Community = () => {
   )
 };
 
-export const RewardIncentives= () => {
-  return (
-    <>
-      <section  className='md:flex md:justify-between md:py-2 h-full mx-auto w-[95%] md:w-full md:h-screen'>
-        <div className='w-full md:w-[35%] md:h-[50vh] h-full mb-5 rounded-lg border'>
-          <img
-            src={incentiveImg}
-            className=' object-contain md:object-cover h-full w-full object-center rounded-lg'
-            quality={100}
-            alt='m1'
-            />
-        </div>
-        <div className='md:w-[60%] w-full text-white'>
-          <h2 className='inter-font text-lg md:text-xl font-bold mb-4'>
-            The following are the updates donors should take note of
-          </h2>
-          <ul className=''>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Equity: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima dolorum dolorem odio facere! Blanditiis debitis incidunt corporis eius. Animi, sit quod nesciunt nulla voluptates illo explicabo numquam expedita rem!
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Early Access to Products: </span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, et. Commodi molestiae nostrum architecto sequi cum, tempora similique esse optio qui consequuntur, obcaecati deserunt quis unde doloremque? Ipsa, similique autem.
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Discounts on Products or Services:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet neque omnis adipisci quisquam blanditiis quam? Commodi ducimus quasi, id sapiente repudiandae unde doloremque tenetur quos inventore natus ullam aliquid quia?
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Exclusive Events or Access: </span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus deleniti sapiente id delectus, et quo cum ratione voluptate molestias! Enim nisi cum ipsum, iusto fugiat laboriosam accusamus impedit nobis?
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Recognition and Branding: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id tempore quaerat ipsum minus deserunt excepturi error, omnis natus architecto, veritatis provident labore! Voluptatem, animi odit? Corporis numquam placeat excepturi.
-            </li>
-          </ul>
-        </div>
-      </section>
-    </>
-  )
-};
+
 
 export const Updates= () => {
   return (
@@ -457,52 +393,8 @@ export const Updates= () => {
   )
 };
 
-export const Security= () => {
-  return (
-    <>
-      <section  className='md:flex md:justify-between md:py-2 h-full md:h-screen'>
-        <div className='w-full md:w-[35%] h-[50vh] mb-5 rounded-lg border'>
-          <img
-            src={padlockImg}
-            className='object-cover h-full w-full object-center rounded-lg'
-            quality={100}
-            alt='m1'
-            />
-        </div>
-        <div className='md:w-[60%] w-full text-white'>
-          <h2 className='inter-font text-lg md:text-xl font-bold mb-4'>
-            To ensure the security of the wildlife conservation project, the following measures can be implemented:
-          </h2>
-          <ul className='mb-5 text-gray-300'>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Anti-Poaching Patrols: </span>Establish regular patrols in key wildlife areas to deter poachers. Trained and equipped ranger teams can conduct surveillance, monitor wildlife movement, and promptly respond to any suspicious activities.
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Technology-Based Solutions: </span>Utilize advanced technologies such as camera traps, drones, and sensor networks to enhance surveillance and detection capabilities. These tools can help monitor wildlife, identify potential threats, and provide real-time data for effective decision-making.
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Community Involvement: </span>Engage local communities living near conservation areas by involving them in wildlife protection efforts. Foster positive relationships, provide education on the value of wildlife, and create economic opportunities that incentivize community support for conservation
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Intelligence Networks: </span>Establish partnerships with law enforcement agencies, intelligence networks, and wildlife crime units to share information and coordinate efforts to combat poaching. Collaborate with local authorities to ensure effective enforcement of anti-poaching laws.
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Wildlife Crime Investigation: </span>Set up a dedicated team of wildlife crime investigators to gather intelligence, conduct investigations, and prosecute individuals involved in wildlife trafficking. This can act as a deterrent and help dismantle poaching networks.
-            </li>
-            <li className='mb-3 text-base list-disc'>
-              <span className='font-bold'>Collaboration with Technology Companies: </span>Partner with technology companies specializing in wildlife protection to develop innovative solutions such as AI-powered surveillance systems, data analytics, and early warning systems for enhanced security.
-            </li>
-          </ul>
-          <button className='text-white font-bold bg-orange-300 rounded-lg py-3 px-10'>Edit or add new security measures</button>
-        </div>
-        
-      </section>
-    </>
-  )
-};
 
-
-export const TeamMembers= () => {
+export const Qualifications= () => {
   return (
     <>
        {/* <section className='w-[90%] md:w-[80%] mx-auto py-10'> */}

@@ -46,9 +46,7 @@ const Subfooter = () => {
         <ConnectDiv>
         <LogoContainer>
             <img src={logo} alt="logo"  width={50}/>
-            <h2>NatureDefenders</h2>
-           
-          </LogoContainer>
+            </LogoContainer>
         <h6>Shaping a Sustainable World</h6>
           <SocialDiv>
         <img src ={twitter} alt="twitter"/>

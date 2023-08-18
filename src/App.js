@@ -3,12 +3,15 @@ import Signup from "./pages/sign-up/Signup";
 import Signin from "./pages/sign-in/Signin";
 import Home from "./pages/home/Home";
 import ProjectDetails from "./pages/project_details/ProjectDetails";
-import ProjectCreation from "./pages/project-creation/ProjectCreation";
-import OngoingProjects from "./pages/ongoing-projects/OngoingProjects";
-import Badge from "./pages/Badge/Badge";
-import ProjectSubmit from "./pages/project-creation/ProjectSubmit";
-import Donate from "./pages/donate/Donate";
-import Naturedefenders from "./components/naturedefenders/Naturedefenders";
+import Marketplace from "./pages/marketplace/Marketplace";
+import Verification from "./pages/verification/Verification";
+import OngoingB from "./pages/ongoing-bidding/OngoingB";
+import Nftavailable from "./pages/nft-available/Nftavailable";
+import Availablesale from "./pages/available-sale/Availablesale";
+import NftMint from "./pages/nft-creation/NftMint";
+import NftCreation from "./pages/nft-creation/NftCreation";
+
+
 
 
 
@@ -16,16 +19,20 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
+      
       <Route  path="/" element={<Home />} />
       <Route  path="/sign-up" element={<Signup />} />
       <Route  path="/sign-in" element={<Signin />} />
+      <Route  path='/verify' element={<Verification />} />
       <Route  path="/project-details" element={<ProjectDetails />} />
-      <Route  path="/project-creation" element={<ProjectCreation />} />
-      <Route  path='/project-submit' element={<ProjectSubmit/>} />
-      <Route  path="/ongoing-projects" element={<OngoingProjects />} />
-      <Route  path="/badge-reward" element={<Badge />} />
-      <Route  path="/donate" element={<Donate/>} />
-      <Route  path="/why-naturedefenders" element={<Naturedefenders />}/>
+      <Route  path="/nft-creation" element={<NftCreation />} />
+      <Route  path='/nft-mint' element={<NftMint/>} />
+      <Route  path="/market-place" element={<Marketplace />} />
+      <Route  path='/ongoing-bidding' element={<OngoingB />} />
+      <Route  path='/nft-available' element={<Nftavailable />} />
+      <Route  path="/available-fractionalownership" element={<Availablesale />} />
+      
+      
     </Routes>
     </BrowserRouter>
   );

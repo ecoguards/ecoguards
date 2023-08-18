@@ -21,15 +21,15 @@ const Navbar = () => {
         <NavbarParent>
             <NavbarWrapper>
                 <LogoContainer><Link to="/"><img src={logo} alt="logo" /></Link>
-                    <h1>NatureDefenders</h1></LogoContainer>
+                    </LogoContainer>
                 <BigLinkContainer>
                     <NavbarLink><Link to='/' style={{ textDecoration: 'none', color: 'white' }} >Home</Link></NavbarLink>
-                    <NavbarLink> <Link to='/ongoing-projects' style={{ textDecoration: 'none', color: 'white' }}>Explore</Link></NavbarLink>
-                    <NavbarLink><Link to='/badge-reward' style={{ textDecoration: 'none', color: 'white' }}>Badge reward</Link></NavbarLink>
+                    <NavbarLink> <Link to='/market-place' style={{ textDecoration: 'none', color: 'white' }}>Marketplace</Link></NavbarLink>
+                    <NavbarLink><Link to='/badge-reward' style={{ textDecoration: 'none', color: 'white' }}>NFTs Projects</Link></NavbarLink>
                     <NavbarLink><Link to='/why-naturedefenders' style={{ textDecoration: 'none', color: 'white' }}>About us </Link></NavbarLink>
                     <NavbarLink><Link style={{ textDecoration: 'none', color: 'white' }}>FAQs</Link></NavbarLink>
                 </BigLinkContainer>
-                <ButtonWrapper><img src={searchIcon} alt="search-icon" width={18} height={18} />
+                <ButtonWrapper><img src={searchIcon} alt="search-icon" width={15} height={15} />
                     <Button>Connect Wallet</Button></ButtonWrapper>
                 
                 <div class="p-16 space-y-2 rounded shadow">

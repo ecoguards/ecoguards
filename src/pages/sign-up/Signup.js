@@ -7,11 +7,12 @@ import {
     FormHeader
 } from "./sign.up.styles";
 import { Link } from "react-router-dom";
-import CarouselPage from "../../components/carousel/Carousel";
+import signupimage from "../../assets/signupimage.png";
 import FormTextInput from "../../components/custom-input/FormTextInput";
 import arrow from "../../assets/arrow.png";
 import { Button } from '@chakra-ui/react';
 import Checkbox from "../../components/checkbox/Checkbox";
+
 
 
 
@@ -23,6 +24,9 @@ const Signup = () => {
     const onChange = () => {
         setChecked(!checked);
     };
+    
+
+    
 
     return (
         <SignupParent>
@@ -83,15 +87,16 @@ const Signup = () => {
                             background='#DA8450'
                             fontWeight='500'
                             marginTop='20px'
+                            
                         >
-                            Create an account
+                            Proceed
                         </Button>
 
 
                         <p>Already have an account? <Link to="/sign-in" style={{ textDecoration: 'none', color: '#da8450' }}>Sign in</Link></p>
 
                     </form>
-                    <div style={{ height: '90rem', width: '45rem' }}><CarouselPage /></div>
+                    <div style={{ height: '90rem', width: '45rem' }}><img src={signupimage} alt='signupimage'/></div>
 
                 </Wrapper>
             </SignupWrapper>

@@ -7,7 +7,7 @@ import {
     FormHeader
 } from "./sign.in.styles";
 import { Link } from "react-router-dom";
-import CarouselPage from "../../components/carousel/Carousel";
+import signinimage from "../../assets/signinimage.png";
 import FormTextInput from "../../components/custom-input/FormTextInput";
 import arrow from "../../assets/arrow.png";
 import { Button } from '@chakra-ui/react';
@@ -69,7 +69,7 @@ const Signin = () => {
 
                     </form>
                  
-                    <div style={{height:'80rem', width:'45rem', marginRight:"5rem"}}><CarouselPage/></div>
+                    <div style={{height:'80rem', width:'45rem', marginRight:"5rem"}}><img src={signinimage} alt="signinimage"/></div>
                 </Wrapper>
                
             </SigninWrapper>

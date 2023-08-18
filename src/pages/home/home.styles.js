@@ -69,7 +69,7 @@ justify-content: center;
 export const ButtonContainer = styled.div`
     display: flex;
     margin-top:15rem;
-    margin-left:4rem;
+    margin-left:2rem;
     
     
 `;
@@ -104,14 +104,14 @@ margin-left:1rem;
 `;
 
 
-export const NatureWrapper = styled.div`
+export const OngoingBiddingWrapper = styled.div`
 width: 100%;
-height: 50%;
+height: 70%;
 display: flex;
 background:#1A1818;
 align-items: center;
 padding-top: 10rem; 
-margin-top:22rem;     
+margin-top:27rem;     
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -121,7 +121,17 @@ display: flex;
 background:#1A1818;
 align-items: center;
 padding-top: 10rem; 
-margin-top:35rem;     
+margin-top:43rem;     
+`;
+
+export const AvailableWrapper = styled.div`
+width: 100%;
+height: 50%;
+display: flex;
+background:#1A1818;
+align-items: center;
+padding-top: 10rem; 
+margin-top:30rem;     
 `;
 
 export const LatestWrapper = styled.div`
@@ -130,8 +140,8 @@ height: 50%;
 display: flex;
 background:#1A1818;
 align-items: center;
-padding-top: 15rem; 
-margin-top:50rem;     
+padding-top: 5rem; 
+margin-top:30rem;     
 `;
 
 export const TheonesWrapper = styled.div`

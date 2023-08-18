@@ -28,30 +28,19 @@ export const LogoContainer = styled.div`
   
 
     & img {
-    width: 3rem;
+    width: 7rem;
     margin-top:3rem;
     }
 
-    h1{
-        font-size:1.5rem;
-        color:#fff;
-        margin-left: 1rem;
-        margin-top:3.5rem;
-        
-    }
     
     `;
 
  
 export const BigLinkContainer = styled.div`
     display: flex;
-    margin-left: 4rem;
+    margin-left: 2rem;
     
-
-   
-    
-     
-    `;
+`;
 
 export const NavbarLink = styled(Link)`
  color:white;
