@@ -11,6 +11,7 @@ import Availablesale from "./pages/available-sale/Availablesale";
 import NftMint from "./pages/nft-creation/NftMint";
 import NftCreation from "./pages/nft-creation/NftCreation";
 import About from "./pages/about/About";
+import Horn from "./pages/horn/Horn";
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route  path='/nft-available' element={<Nftavailable />} />
       <Route  path="/available-fractionalownership" element={<Availablesale />} />
       <Route  path="/about-us" element={<About />} />
+      <Route  path="/horn-shield" element={<Horn/>} />
       
       
     </Routes>

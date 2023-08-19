@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SubfooterParent = styled.div`
     width: 120vw;
-    height: 30vh;
+    height: 53vh;
     display: flex;
     background:#1A1818;
 
@@ -11,7 +11,7 @@ export const SubfooterParent = styled.div`
 
 export const SubcenterWrapper = styled.div`
     width: 120vw;
-    height: 30vh;
+    height: 53vh;
     display: flex;
     background:#1A1818;
    

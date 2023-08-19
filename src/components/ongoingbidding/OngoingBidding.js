@@ -24,7 +24,7 @@ const OngoingBidding = () => {
                 <Link style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link>
                 </Header>
                 <SummaryContainer>
-                     <img src={onhorn} alt='onhorn'/>
+                 <Link to='/horn-shield'>   <img src={onhorn} alt='onhorn'/></Link> 
                      <img src={onroar} alt='onroar'/>
                      <img src={ontusk} alt='ontusk'/>
                 </SummaryContainer>
