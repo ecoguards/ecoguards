@@ -52,7 +52,7 @@ const Marketplace = () => {
                 
 
                 <SummaryContainer1>
-                 <img src={onhorn} alt="onhorn" />
+                <Link to='/horn-shield'><img src={onhorn} alt="onhorn" /></Link> 
                     <img src={onroar} alt="onroar" />
                     <img src={ontusk} alt="ontusk" />
                 </SummaryContainer1>

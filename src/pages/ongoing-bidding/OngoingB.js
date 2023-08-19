@@ -41,7 +41,7 @@ const OngoingB = () => {
                     <Link to='/available-fractionalownership'><Button>Available for Fractional ownership</Button></Link>
                     </ButtonContainer>
                 <SummaryContainer1>
-                 <img src={onhorn} alt="onhorn" />
+              <Link to='/horn-shield'> <img src={onhorn} alt="onhorn" /></Link>  
                     <img src={onroar} alt="onroar" />
                     <img src={ontusk} alt="ontusk" />
                 </SummaryContainer1>

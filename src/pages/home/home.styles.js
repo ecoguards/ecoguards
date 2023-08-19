@@ -172,6 +172,7 @@ height: 30%;
 display: flex;
 background:#1A1818;
 align-items: center;
+margin-top:3rem;
 
  
 `;
