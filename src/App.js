@@ -12,6 +12,7 @@ import NftMint from "./pages/nft-creation/NftMint";
 import NftCreation from "./pages/nft-creation/NftCreation";
 import About from "./pages/about/About";
 import Horn from "./pages/horn/Horn";
+import Pride from "./pages/pride/Pride";
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <Route  path="/available-fractionalownership" element={<Availablesale />} />
       <Route  path="/about-us" element={<About />} />
       <Route  path="/horn-shield" element={<Horn/>} />
+      <Route  path='/pride-preserve' element={<Pride/>} />
       
       
     </Routes>

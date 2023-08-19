@@ -21,7 +21,7 @@ const OngoingBidding = () => {
         <OngoingParent>
             <OngoingWrapper>
                 <Header><h2>Ongoing bidding </h2>
-                <Link style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link>
+                <Link to='/ongoing-bidding' style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link>
                 </Header>
                 <SummaryContainer>
                  <Link to='/horn-shield'>   <img src={onhorn} alt='onhorn'/></Link> 

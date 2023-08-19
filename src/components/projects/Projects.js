@@ -24,7 +24,7 @@ const Projects = () => {
         <ProjectsParent>
             <ProjectsWrapper>
                 <Header><h2>NFTs available for sale</h2>
-                <Link style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link> 
+                <Link to='/nft-available' style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link> 
                 </Header>
 
                 <SummaryContainer1>

@@ -25,7 +25,7 @@ const Navbar = () => {
                 <BigLinkContainer>
                     <NavbarLink><Link to='/' style={{ textDecoration: 'none', color: 'white' }} >Home</Link></NavbarLink>
                     <NavbarLink> <Link to='/market-place' style={{ textDecoration: 'none', color: 'white' }}>Marketplace</Link></NavbarLink>
-                    <NavbarLink><Link to='/badge-reward' style={{ textDecoration: 'none', color: 'white' }}>NFTs Projects</Link></NavbarLink>
+                    <NavbarLink><Link to='/horn-shield' style={{ textDecoration: 'none', color: 'white' }}>NFTs Projects</Link></NavbarLink>
                     <NavbarLink><Link to='/about-us' style={{ textDecoration: 'none', color: 'white' }}>About us </Link></NavbarLink>
                     <NavbarLink><Link style={{ textDecoration: 'none', color: 'white' }}>FAQs</Link></NavbarLink>
                 </BigLinkContainer>

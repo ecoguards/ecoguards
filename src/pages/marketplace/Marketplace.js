@@ -57,7 +57,7 @@ const Marketplace = () => {
                     <img src={ontusk} alt="ontusk" />
                 </SummaryContainer1>
                 <SummaryContainer2>
-                    <img src={nftpride} alt="nftpride" />
+                 <Link to='/pride-preserve'> <img src={nftpride} alt="nftpride" /></Link>
                     <img src={nftbark} alt="nftbark" />
                     <img src={nftspeed} alt="nftspeed" />
                 </SummaryContainer2>

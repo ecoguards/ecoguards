@@ -26,7 +26,7 @@ const Available = () => {
         <AvailableParent>
             <AvailableWrapper>
                 <Header><h2>Available for fractional ownership</h2>
-                <Link style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link>  
+                <Link to='/available-fractionalownership' style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link>  
                 </Header>
 
                 <SummaryContainer1>
@@ -37,7 +37,7 @@ const Available = () => {
                 
                 <ButtonContainer>
                     <Button>
-                        <Link  style={{ textDecoration: 'none', color: 'white' }}>Explore more Projects</Link>
+                        <Link to='horn-shield'  style={{ textDecoration: 'none', color: 'white' }}>Explore more Projects</Link>
                     </Button>
                 </ButtonContainer>
             </AvailableWrapper>
