@@ -32,14 +32,14 @@ export const BarWrapper = styled.div`
     
 
 export const SummaryContainer2 = styled.section`
-      width: 90%;
-      height: 45%;
+      width: 100%;
+      height: 50%;
       display: flex;
-      gap: 0.5rem;
+      gap: 1.5rem;
       justify-content: space-around;
       align-items: center;
-      margin-top:15rem;
-      margin-left:5rem;
+      margin-top:5rem;
+     
     `;
     
 
@@ -109,6 +109,7 @@ export const SummaryCard = styled.div`
    font-size: 1rem;
    color: #fff;
    margin-left:7rem;
+   line-height:1rem;
  }
 
  & img{
