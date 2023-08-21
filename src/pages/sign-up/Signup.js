@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import signupimage from "../../assets/signupimage.png";
 import FormTextInput from "../../components/custom-input/FormTextInput";
 import arrow from "../../assets/arrow.png";
-import { Button } from '@chakra-ui/react';
+import { Button, CloseButton } from '@chakra-ui/react';
 import Checkbox from "../../components/checkbox/Checkbox";
 
 
@@ -34,6 +34,7 @@ const Signup = () => {
                 <Wrapper>
 
                     <form>
+                    <Link to='/'>< CloseButton/></Link> 
                         <FormHeader>
                             <h3>CREATE YOUR ACCOUNT</h3>
 

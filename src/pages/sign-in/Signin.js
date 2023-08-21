@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import signinimage from "../../assets/signinimage.png";
 import FormTextInput from "../../components/custom-input/FormTextInput";
 import arrow from "../../assets/arrow.png";
-import { Button } from '@chakra-ui/react';
+import { Button, CloseButton } from '@chakra-ui/react';
 
 
 
@@ -19,14 +19,14 @@ import { Button } from '@chakra-ui/react';
 
 
 const Signin = () => {
-
-
+   
     return (
         <SigninParent>
             <SigninWrapper>
                 <Wrapper>
-
+                
                     <form>
+                   <Link to='/'>< CloseButton/></Link> 
                         <FormHeader>
                             <h3>SIGN INTO YOUR ACCOUNT</h3>
 

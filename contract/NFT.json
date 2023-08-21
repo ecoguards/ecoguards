@@ -1,0 +1,509 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_ecoguardWallet",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "paymentAddress",
+                "type": "address"
+            }
+        ],
+        "type": "constructor",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "EnforcedPause",
+        "type": "error"
+    },
+    {
+        "name": "ExpectedPause",
+        "type": "error"
+    },
+    {
+        "name": "ReentrancyGuardReentrantCall",
+        "type": "error"
+    },
+    {
+        "name": "AuctionFinalized",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "winner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "winningBid",
+                "type": "uint256"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "AuctionStarted",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startingPrice",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "auctionEndTime",
+                "type": "uint256"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "BidPlaced",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "bidder",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "bidAmount",
+                "type": "uint256"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "ConservationDonation",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "donor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "donationAmount",
+                "type": "uint256"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "ListingSuccessfull",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startingPrice",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "listingEndTime",
+                "type": "uint256"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "NFTPurchased",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "buyer",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "seller",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "price",
+                "type": "uint256"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "Paused",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "Unpaused",
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "createListing",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_assetAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "price",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "auctionDuration",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "conservationProject",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "cusdAddress",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "view"
+    },
+    {
+        "name": "donateToProject",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "payable"
+    },
+    {
+        "name": "finalizeAuction",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "nfts",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "listingId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "assetAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "seller",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "price",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "listingEndTime",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "highestBidder",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "highestBid",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "available",
+                "type": "bool"
+            },
+            {
+                "internalType": "string",
+                "name": "tokenURI",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "conservationProject",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "view"
+    },
+    {
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "view"
+    },
+    {
+        "name": "pauseContract",
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "paused",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "view"
+    },
+    {
+        "name": "placeBid",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "payable"
+    },
+    {
+        "name": "purchaseNFT",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "payable"
+    },
+    {
+        "name": "setConservationProject",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "newConservationProject",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "setPlatformWallet",
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newWallet",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "setPrice",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "newPrice",
+                "type": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "startAuction",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_buyOutPrice",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "auctionDuration",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_assetAddress",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "unpauseContract",
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "withdrawNFT",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_listingId",
+                "type": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "withdrawPlatformFee",
+        "type": "function",
+        "stateMutability": "nonpayable"
+    }
+]

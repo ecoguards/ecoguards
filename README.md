@@ -1,3 +1,31 @@
+Celo & Bunzz Hackathon
+Team Name: Tech La’femme
+Track: NFT
+Product Name: Ecoguard
+Topic: Development of Ecoguard, an NFTs product for the conservation of the ecosystem (Wildlife and Forestry).
+
+Product Requirement Document:
+https://docs.google.com/document/d/10A9RoMEndhPp7nfccC7Jk1oxH99zY2EAV5VJsM9_2IM/edit?usp=sharing
+
+Design: https://www.figma.com/file/S0v4kYdwtoRfymAyrIQTQc/ECOGUARD?type=design&node-id=701-1446&mode=design&t=MoFKO4m4IZiADO0O-0 
+
+Prototype:
+https://www.figma.com/proto/IqVRkuutkmWFdsJPhygRIh/Naturedefenders-girls-in-tech?type=design&node-id=866-6178&t=R8uYTi8H02hbOHoy-0&scaling=min-zoom&page-id=518%3A1533&starting-point-node-id=866%3A7117 
+
+GIT REPO
+https://github.com/ecoguards 
+
+MVP
+https://ecoguards.vercel.app/ 
+
+Deployed on CeloBunzz and Celo Alfajores: 0xbD2C510871c6edC9b48A3054a7a2560f5e56EcbE
+
+PITCH DEMO VIDEO
+ https://www.canva.com/design/DAFsMdg1bgs/zsvKLDWsqUEpRMWM1atSRw/watch?utm_content=DAFsMdg1bgs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
+PITCH-DECK PRESENTATION SLIDE
+https://www.canva.com/design/DAFrr4p-klg/B5OrxA-QaR2bTHtxTY1E9g/edit?utm_content=DAFrr4p-klg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+
 Product Overview:
 Ecoguard is a digital platform that utilizes non-fungible tokens (NFTs) to conserve Africa's ecosystem, preventing wildlife extinction and preserving its forests. It allows users to participate in forestry and wildlife conservation efforts by purchasing and trading NFTs representing endangered species such as rhinos, African elephants, cheetahs, mountain gorillas etc. 
 Ecoguard leverages blockchain technology; to provide a transparent and secure platform for individuals and organizations to support the protection of endangered species through the creation, trading and ownership of unique digital assets. The funds generated through the sale of these NFTs will be directly allocated to conservation initiatives, ensuring the long-term sustainability of Africa's precious ecosystems.

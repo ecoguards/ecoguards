@@ -36,10 +36,7 @@ import Available from "../../components/available/Available";
 
 const Home = () => {
 
-
-      
-
-
+        
 
         return (
                 <HomeParent>
