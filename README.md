@@ -1,7 +1,15 @@
 Celo & Bunzz Hackathon
+
+
 Team Name: Tech La’femme
+
+
 Track: NFT
+
+
 Product Name: Ecoguard
+
+
 Topic: Development of Ecoguard, an NFTs product for the conservation of the ecosystem (Wildlife and Forestry).
 
 Product Requirement Document:
@@ -10,7 +18,7 @@ https://docs.google.com/document/d/10A9RoMEndhPp7nfccC7Jk1oxH99zY2EAV5VJsM9_2IM/
 Design: https://www.figma.com/file/S0v4kYdwtoRfymAyrIQTQc/ECOGUARD?type=design&node-id=701-1446&mode=design&t=MoFKO4m4IZiADO0O-0 
 
 Prototype:
-https://www.figma.com/proto/IqVRkuutkmWFdsJPhygRIh/Naturedefenders-girls-in-tech?type=design&node-id=866-6178&t=R8uYTi8H02hbOHoy-0&scaling=min-zoom&page-id=518%3A1533&starting-point-node-id=866%3A7117 
+https://www.figma.com/proto/S0v4kYdwtoRfymAyrIQTQc/ECOGUARD?type=design&node-id=965-8252&t=5X93SP8MkFijWlfZ-0&scaling=min-zoom&page-id=518%3A1533&starting-point-node-id=965%3A9975 
 
 GIT REPO
 https://github.com/ecoguards 
@@ -18,10 +26,10 @@ https://github.com/ecoguards
 MVP
 https://ecoguards.vercel.app/ 
 
-Deployed on CeloBunzz and Celo Alfajores: 0xbD2C510871c6edC9b48A3054a7a2560f5e56EcbE
+Deployed Address on CeloBunzz and Celo Alfajores: 0xbD2C510871c6edC9b48A3054a7a2560f5e56EcbE
 
 PITCH DEMO VIDEO
- https://www.canva.com/design/DAFsMdg1bgs/zsvKLDWsqUEpRMWM1atSRw/watch?utm_content=DAFsMdg1bgs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+https://www.canva.com/design/DAFsMdg1bgs/zsvKLDWsqUEpRMWM1atSRw/watch 
 
 PITCH-DECK PRESENTATION SLIDE
 https://www.canva.com/design/DAFrr4p-klg/B5OrxA-QaR2bTHtxTY1E9g/edit?utm_content=DAFrr4p-klg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
