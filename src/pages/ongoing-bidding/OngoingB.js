@@ -13,7 +13,7 @@ import {
 import ontusk from "../../assets/ontusk.png";
 import onhorn from "../../assets/onhorn.png";
 import onroar from "../../assets/onroar.png";
-import Subfooter from "../../components/subfooter/Subfooter";
+import Subfooter from "../../components/subfooter/index";
 import Navbar from "../../components/navbar/Navbar";
 import { Wrapper } from "../nft-creation/nft.creation.styles";
 import { Link } from "react-router-dom";

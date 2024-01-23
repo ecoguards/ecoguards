@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const TheonesParent = styled.div`
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background:#1A1818;
