@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import pridepreserve from "../../assets/pridepreserve.png";
 import Navbar from "../../components/navbar/Navbar";
-import Subfooter from "../../components/subfooter/Subfooter";
+import Subfooter from "../../components/subfooter/index";
 import nftpride from "../../assets/nftpride.png";
 import onroar from "../../assets/onroar.png";
 import nftspeed from "../../assets/nftspeed.png";

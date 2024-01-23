@@ -7,7 +7,7 @@ import {
     FormHeader,
     BarWrapper
 } from "./nft.creation.styles";
-import Subfooter from "../../components/subfooter/Subfooter";
+import Subfooter from "../../components/subfooter/index";
 import Navbar from "../../components/navbar/Navbar";
 import arrow from "../../assets/arrow.png";
 import FormButton from "../../components/custom-button/FormButton";

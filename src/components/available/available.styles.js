@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const AvailableParent = styled.div`
     width: 100vw;
-    height: 200vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     background:#1A1818;

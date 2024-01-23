@@ -8,7 +8,7 @@ import andersonImg from "../../assets/anderson.svg";
 import updateImg from "../../assets/updates.svg";
 import Navbar from "../../components/navbar/Navbar";
 import onhorn from "../../assets/onhorn.png";
-import Subfooter from "../../components/subfooter/Subfooter";
+import Subfooter from "../../components/subfooter/index";
 import mccoy from "../../assets/mccoy.svg";
 import ba from "../../assets/ba.png";
 import cart from "../../assets/cart.png";

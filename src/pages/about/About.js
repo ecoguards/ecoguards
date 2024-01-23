@@ -9,7 +9,7 @@ import {
     SummaryContainer,
     Header
 } from "./about.styles";
-import Subfooter from "../../components/subfooter/Subfooter";
+import Subfooter from "../../components/subfooter/index";
 import Navbar from "../../components/navbar/Navbar";
 import { Wrapper } from "../nft-creation/nft.creation.styles";
 import star from "../../assets/star.png";
