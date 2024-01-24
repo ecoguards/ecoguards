@@ -1,17 +1,11 @@
 import React from "react";
 import {
-    AboutParent,
-    AboutWrapper,
     SummaryContainer2,
-    SubfooterWrapper,
-    BarWrapper, 
     SummaryCard,
     SummaryContainer,
-    Header
-} from "./about.styles";
+    } from "./about.styles";
 import Subfooter from "../../components/subfooter/index";
 import Navbar from "../../components/navbar/Navbar";
-import { Wrapper } from "../nft-creation/nft.creation.styles";
 import star from "../../assets/star.png";
 import arrow from "../../assets/arrow.png";
 
@@ -26,17 +20,15 @@ const About = () => {
 
 
     return (
-        <AboutParent>
-            <AboutWrapper>
-            <BarWrapper>
+        <main className="bg-[#1A1818] w-screen">
+           
                     <Navbar />
-                </BarWrapper>
-                <Wrapper>
                 
-              
-                    <Header><h2>Why Ecoguards?</h2>
+                
+              <div class=' text-white text-4xl mb-3 mx-40'>
+                    <h2>Why Ecoguards?</h2>
                     <img src={arrow} alt="arrow" />
-                </Header>
+                    </div>
                 <SummaryContainer>
                     <SummaryCard background="#110A03" borderColor="#110A03">
                         <img src={star} alt="star" width={40}/>
@@ -102,15 +94,11 @@ const About = () => {
                 </SummaryContainer2>
                
                 
-                    <SubfooterWrapper>
+                   
                         <Subfooter />
-                    </SubfooterWrapper>
-                    </Wrapper>
-            </AboutWrapper>
-
-
-
-        </AboutParent>
+                   
+                        </main>
+            
 
 
 

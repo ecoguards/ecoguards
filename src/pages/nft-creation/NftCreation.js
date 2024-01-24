@@ -1,12 +1,4 @@
 import React from "react";
-import {
-    CreationParent,
-    CreationWrapper,
-    SubfooterWrapper,
-    Wrapper,
-    FormHeader,
-    BarWrapper
-} from "./nft.creation.styles";
 import Subfooter from "../../components/subfooter/index";
 import Navbar from "../../components/navbar/Navbar";
 import arrow from "../../assets/arrow.png";
@@ -29,19 +21,19 @@ const NftCreation = () => {
 
 
     return (
-        <CreationParent>
-            <CreationWrapper>
-                <BarWrapper>
+        <main className="bg-[#1A1818] w-screen">
+        
+                
                     <Navbar />
-                </BarWrapper>
-                <Wrapper>
-
-                <FormHeader>
-                            <h3>MINT OR CREATE NFTs</h3>
+                
+<div>
+                
+                            <h3  class="text-white font-semibold text-4xl">MINT OR CREATE NFTs</h3>
 
                             <img src={arrow} alt="arrow" />
                             <p>This form section is to get details about the project creator</p>
-                        </FormHeader>
+                        
+                        </div>
                     <form>
                         
 
@@ -91,12 +83,11 @@ const NftCreation = () => {
                     </form>
 
                     
-                    <SubfooterWrapper>
+                    
                         <Subfooter />
-                    </SubfooterWrapper>
-                </Wrapper>
-            </CreationWrapper>
-        </CreationParent>
+                    
+              
+        </main>
 
     );
 };

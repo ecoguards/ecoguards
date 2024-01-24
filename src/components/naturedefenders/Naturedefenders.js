@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    NatureParent, NatureWrapper,
     SummaryCard,
     SummaryContainer,
     Header
@@ -17,8 +16,7 @@ const Naturedefenders = () => {
 
 
     return (
-        <NatureParent>
-            <NatureWrapper>
+        <div>
                 <Header><h2>Why NatureDefenders?</h2>
                     <img src={arrow} alt="arrow" />
                 </Header>
@@ -53,11 +51,7 @@ const Naturedefenders = () => {
                     </SummaryCard>
                 </SummaryContainer>
 
-            </NatureWrapper>
-
-
-
-        </NatureParent>
+                </div>
 
 
 

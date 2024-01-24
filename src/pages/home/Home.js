@@ -31,7 +31,7 @@ const Home = () => {
                                 <figure class="relative  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 w-full">
                                         <div> <img src={landingimage} alt='landingimage' /></div>
 
-                                        <figcaption class="absolute" >
+                                        <figcaption class="absolute bottom-96 mx-24 flex gap-8">
                                                 <Link to='/sign-in' style={{ textDecoration: 'none', color: 'white' }} ><button class="bg-[#DA8450] hover:bg-[#1A1818] text-white font-semibold py-2  border-white w-28 h-10 rounded">Explore</button></Link>
 
 
@@ -43,18 +43,12 @@ const Home = () => {
 
 
                         </section>
-                        <div class='mt-80'>
+                        <div class='mt-20'>
                                 <OngoingBidding />
                         </div>
-
-                        <Projects />
-
-
-                        <Available />
-
-
-                        <Latest />
-
+                       <Projects />
+                       <Available />
+                       <Latest />
                         <div>
                                 <Theones />
                         </div>
