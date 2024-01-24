@@ -1,12 +1,4 @@
 import React from "react";
-import {
-    AvailableParent,
-    AvailableWrapper,
-    Header,
-    SummaryContainer1,
-    Button,
-    ButtonContainer
-} from "./available.styles";
 import nftbark from "../../assets/nftbark.png";
 import nftpride from "../../assets/nftpride.png";
 import nftspeed from "../../assets/nftspeed.png";
@@ -23,28 +15,26 @@ const Available = () => {
 
 
     return (
-        <AvailableParent>
-            <AvailableWrapper>
-                <Header><h2>Available for fractional ownership</h2>
-                <Link to='/available-fractionalownership' style={{ textDecoration: 'none', color: 'white', marginLeft:'73rem' }} > View All</Link>  
-                </Header>
+        <div className="bg-[#1A1818] ">
+            <div class='mx-8  text-white text-4xl mb-3 mt-2'>
+                <h2>Available for fractional ownership</h2>
+                <Link to='/available-fractionalownership' style={{ textDecoration: 'none', color: 'white', marginLeft: '70rem' , fontSize:'1rem' }} > View All</Link>
+            </div>
 
-                <SummaryContainer1>
-                    <img src={nftpride} alt="nftpride" />
-                    <img src={nftbark} alt="nftbark"/>
-                    <img src={nftspeed} alt="nftspeed" />
-                </SummaryContainer1>
-                
-                <ButtonContainer>
-                    <Button>
-                        <Link to='horn-shield'  style={{ textDecoration: 'none', color: 'white' }}>Explore more Projects</Link>
-                    </Button>
-                </ButtonContainer>
-            </AvailableWrapper>
+            <div className="grid-cols-4 gap-4 md:flex md:flex-row mx-8">
+                <img src={nftpride} alt="nftpride" />
+                <img src={nftbark} alt="nftbark" />
+                <img src={nftspeed} alt="nftspeed" />
 
+            </div>
+            <div class='mx-96 px-40 mt-2'>
+                <Link to='horn-shield' style={{ textDecoration: 'none', color: 'white' }}><button class="bg-[#DA8450] hover:bg-[#1A1818] text-white font-semibold py-2  border-white w-48 h-15 rounded">Explore more Projects</button></Link>
+            </div>
+
+        </div>
 
 
-        </AvailableParent>
+
 
 
 

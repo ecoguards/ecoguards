@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav class="bg-[#1A1818]">
          <div className='fixed top-0 right-0 left-0 bg-gradient z-50 bg-[#1A1818]'>
-         <div className='flex gap-4 justify-center items-center mx-4 pt-4'>
+         <div className='flex gap-4 justify-center items-center mx-4 pt-2'>
                 <Link to="/"><img src={logo} alt="logo" class='w-40'  /></Link>
                     
                 <ul className='flex m-auto gap-20'>

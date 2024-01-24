@@ -1,7 +1,5 @@
 import React from "react";
 import {
-    LatestParent,
-    LatestWrapper,
     Header,
     SummaryContainer1,
     SummaryContainer2,
@@ -24,8 +22,7 @@ const Latest = () => {
 
 
     return (
-        <LatestParent>
-            <LatestWrapper>
+        <div className="bg-[#1A1818] ">
                 <Header><h2>Latest update About earth</h2>
                     <img src={arrow} alt="arrow" />
                 </Header>
@@ -58,11 +55,7 @@ const Latest = () => {
                     </SummaryContainer3>
                 </SummaryWrapper>
 
-            </LatestWrapper>
-
-
-
-        </LatestParent>
+            </div>
 
 
 
